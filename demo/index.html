@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="plunker">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>AngularJS Plunker</title>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script data-require="angular.js@1.2.x" src="https://code.angularjs.org/1.2.22/angular.js" data-semver="1.2.22"></script>
+  </head>
+
+  <body>
+    <h1>Regular</h1>
+    <jg-knob></jg-knob>
+    <h1>No Display Input</h1>
+    <input display-input="false" jg-knob />
+    <h1>Show Cursor</h1>
+    <input cursor="true" jg-knob />
+    <h1>Control Width</h1>
+    <jg-knob width="100"></jg-knob>
+    <h1>Control Min and Max</h1>
+    <input min="5" max="8" jg-knob />
+    <h1>Control Step</h1>
+    <input step="5" jg-knob />
+    <h1>Linecap Round</h1>
+    <input angle-offset="90" linecap="'round'" jg-knob />
+    <h1>FGColor and Arc</h1>
+    <input fg-color="'#66CC66'" angle-arc="250" angle-offset="-125" jg-knob />
+    <script src="jquery.knob.js"></script>
+    <script src="knob.js"></script>
+    <script src="app.js"></script>
+  </body>
+
+</html>
