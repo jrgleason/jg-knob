@@ -17,6 +17,11 @@ var Directive = function(){
       }
     }
     elm.knob(this.settings());
+    // FIXME I would like to do something like this but it isn't working
+    // this.updateValue = function(){
+    //   console.log(JSON.stringify(this.settings()));
+    //   elm.trigger('configure', this.settings());
+    // }
     scope.$watch('value', function() {
       if (typeof scope.value !== 'undefined') {
         elm.val(scope.value).trigger('change');
