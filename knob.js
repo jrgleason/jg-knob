@@ -60,7 +60,8 @@ var Directive = function(){
       angleOffset:"=",
       linecap:"=",
       fgColor:"=",
-      angleArc:"="
+      angleArc:"=",
+      value:"="
     }
   }
 }
