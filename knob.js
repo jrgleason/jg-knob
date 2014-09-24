@@ -1,4 +1,4 @@
-angular.module('jg.knob', []);
+var app = angular.module('jg.knob', []);
 
 var Directive = function(){
   var linker = function(scope, elm, attrs){
