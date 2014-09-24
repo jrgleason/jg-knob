@@ -2,21 +2,7 @@ var app = angular.module('jg.knob', []);
 
 var Directive = function(){
   var linker = function(scope, elm, attrs){
-    this.settings = function() {
-      return {
-        "displayInput": scope.displayInput,
-        "cursor": scope.cursor,
-        "width": scope.width,
-        "min": scope.min,
-        "max": scope.max,
-        "step": scope.step,
-        "angleOffset": scope.angleOffset,
-        "lineCap": scope.linecap,
-        "fgColor": scope.fgColor,
-        "angleArc": scope.angleArc
-      }
-    }
-    elm.knob(this.settings());
+    elm.knob(scope);
     // FIXME I would like to do something like this but it isn't working
     // this.updateValue = function(){
     //   console.log(JSON.stringify(this.settings()));
